@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, send_from_directory
 import sqlite3
 
 app = Flask(__name__)
@@ -84,6 +84,11 @@ def delete(id):
     conn.close()
 
     return redirect('/')
+
+
+@app.route('/output/<path:filename>')
+def output_file(filename):
+    return send_from_directory('output', filename)
 
 if __name__ == '__main__':
     app.run(debug=True)
