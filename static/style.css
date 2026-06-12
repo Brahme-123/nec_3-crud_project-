@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 75%;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #4a148c;
+    margin-bottom: 25px;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 12px;
+    border: 2px solid #7e57c2;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #512da8;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #7e57c2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #512da8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+th {
+    background: #673ab7;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f3e5f5;
+}
+
+tr:nth-child(odd) {
+    background: #ede7f6;
+}
+
+tr:hover {
+    background: #d1c4e9;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin: 2px;
+    display: inline-block;
+}
+
+a[href*="edit"] {
+    background: #2196f3;
+}
+
+a[href*="edit"]:hover {
+    background: #1565c0;
+}
+
+a[href*="delete"] {
+    background: #f44336;
+}
+
+a[href*="delete"]:hover {
+    background: #c62828;
+}
